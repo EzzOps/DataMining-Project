@@ -19,27 +19,34 @@ def get_user_input():
 
     return table
 
+def maximax(alternatives):
+    max_values = [max(alt[1:]) for alt in alternatives]
+    max_index = max_values.index(max(max_values))
+    return max_index + 1  
 
-# This function displays the table of alternatives and market states.
-def display_table(table):
-    print("\nSTATE OF NATURE")
-    print("{:<20}".format("ALTERNATIVE"), end="")
-    for i in range(1, len(table[0])):
-        print("{:<20}".format(f"STATE {i}"), end="")
-    print()
+def maximin(alternatives):
+    min_values = [min(alt[1:]) for alt in alternatives]
+    max_index = min_values.index(max(min_values))
+    return max_index + 1
 
-    for row in table:
-        for value in row:
-            print("{:<20}".format(str(value)), end="")
-        print()
+def hurwicz(alternatives, alpha):
+    weighted_values = [(alpha * max(alt[1:]) + (1 - alpha) * min(alt[1:])) for alt in alternatives]
+    max_index = weighted_values.index(max(weighted_values))
+    return max_index + 1
 
+def equally_likely(alternatives):
+    avg_values = [sum(alt[1:]) / len(alt[1:]) for alt in alternatives]
+    max_index = avg_values.index(max(avg_values))
+    return max_index + 1
 
-# The main function calls the get_user_input function to collect user input,
-# and then calls the display_table function to display the table.
 def main():
     user_table = get_user_input()
-    display_table(user_table)
 
+    print(f"Maximax choice: Alternative {maximax(user_table)}")
+    print(f"Maximin choice: Alternative {maximin(user_table)}")
+    alpha = float(input("Enter the coefficient of optimism (alpha) for the Hurwicz criterion: "))
+    print(f"Hurwicz choice (alpha={alpha}): Alternative {hurwicz(user_table, alpha)}")
+    print(f"Equally likely choice: Alternative {equally_likely(user_table)}")
 
 if __name__ == "__main__":
     main()
