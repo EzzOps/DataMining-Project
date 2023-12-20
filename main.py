@@ -1,92 +1,109 @@
+# Import necessary modules for colored console output
 from colorama import Fore, Style
 
-# This function prompts the user to enter the number of alternatives and market states,
-# and then collects user input for each alternative and market state.
-# It returns a table containing the user input.
+# Function to collect user input for alternatives and market states
 def get_user_input():
+    # Prompt the user to enter the number of alternatives
     num_alternatives = int(input(f"{Fore.YELLOW}Enter the number of alternatives: {Style.RESET_ALL}"))
+    # Prompt the user to enter the number of market states
     num_states = int(input(f"{Fore.YELLOW}Enter the number of market states: {Style.RESET_ALL}"))
 
+    # Initialize an empty table to store user input
     table = []
+    # Loop through each alternative
     for i in range(num_alternatives):
+        # Prompt the user to enter the name of each alternative
         alternative = [input(f"{Fore.CYAN}Enter the name of Alternative {i + 1}: {Style.RESET_ALL}")]
+        # Loop through each market state for the current alternative
         for j in range(num_states):
+            # Prompt the user to enter the expected value for the alternative in the current market state
             value = input(f"{Fore.CYAN}Enter the expected value for Alternative {i + 1} in State {j + 1}: {Style.RESET_ALL}")
+            # Call parse_value to convert input to float and handle empty values
             value = parse_value(value)
+            # Append the alternative name and its value for the current market state to the table
             alternative.append(value)
+        # Append the alternative information to the overall table
         table.append(alternative)
 
+    # Return the completed table containing user input
     return table
 
-
+# Function to parse user input value and convert it to a float
 def parse_value(value):
+    # Check if the input value is empty
     if value.strip() == "":
+        # If empty, return 0.0
         return 0.0
     else:
+        # Replace special characters and convert to float
         value = value.replace('–', '-').replace(',', '')
+        # Return the converted float value
         return float(value)
 
-
-# The maximax method selects the alternative that has the highest maximum payoff.
-# For each alternative, we find the maximum payoff using max(alt[1:]), and we store these in max_values.
-# We then find the index of the alternative that has the highest maximum payoff.
-# We return this index plus one (since alternative indices are 1-based).
+# Function implementing Maximax criterion
 def maximax(alternatives):
+    # Find the maximum payoff for each alternative
     max_values = [max(alt[1:]) for alt in alternatives]
+    # Find the index of the alternative with the highest maximum payoff
     max_index = max_values.index(max(max_values))
-    return max_index + 1  
+    # Return the alternative index with 1 added (for 1-based indexing)
+    return max_index + 1
 
-
-# The maximin method selects the alternative that has the highest minimum payoff.
-# For each alternative, we find the minimum payoff using min(alt[1:]), and we store these in min_values.
-# We then find the index of the alternative that has the highest minimum payoff.
-# We return this index plus one (since alternative indices are 1-based).
+# Function implementing Maximin criterion
 def maximin(alternatives):
+    # Find the minimum payoff for each alternative
     min_values = [min(alt[1:]) for alt in alternatives]
+    # Find the index of the alternative with the highest minimum payoff
     max_index = min_values.index(max(min_values))
+    # Return the alternative index with 1 added (for 1-based indexing)
     return max_index + 1
 
-
-# The Hurwicz criterion is a compromise between the maximax and maximin criteria.
-# It calculates a weighted average of the maximum and minimum payoffs for each alternative,
-# where alpha is the weight given to the maximum payoff.
-# We then select the alternative that has the highest weighted average payoff.
+# Function implementing Hurwicz criterion
 def hurwicz(alternatives, alpha):
+    # Calculate a weighted average of maximum and minimum payoffs for each alternative
     weighted_values = [(alpha * max(alt[1:]) + (1 - alpha) * min(alt[1:])) for alt in alternatives]
+    # Find the index of the alternative with the highest weighted average payoff
     max_index = weighted_values.index(max(weighted_values))
+    # Return the alternative index with 1 added (for 1-based indexing)
     return max_index + 1
 
-
-# The equally likely criterion calculates the average payoff for each alternative,
-# assuming that each state of the world is equally likely.
-# We then select the alternative that has the highest average payoff.
+# Function implementing Equally Likely criterion
 def equally_likely(alternatives):
+    # Calculate the average payoff for each alternative
     avg_values = [sum(alt[1:]) / len(alt[1:]) for alt in alternatives]
+    # Find the index of the alternative with the highest average payoff
     max_index = avg_values.index(max(avg_values))
+    # Return the alternative index with 1 added (for 1-based indexing)
     return max_index + 1
 
-
-# The minimax regret criterion first calculates a "regret" for each alternative in each state of the world,
-# which is the difference between the maximum payoff in that state and the payoff for that alternative.
-# It then selects the alternative that has the smallest maximum regret.
+# Function implementing Minimax Regret criterion
 def minimax_regret(alternatives):
+    # Find the maximum payoff for each alternative
     max_values = [max(alt[1:]) for alt in alternatives]
+    # Create a regret table by subtracting each alternative's payoff from the maximum payoff
     regret_table = [[max_value - value for value in alt[1:]] for alt, max_value in zip(alternatives, max_values)]
+    # Find the maximum regret for each alternative
     max_regrets = [max(regret) for regret in regret_table]
+    # Find the index of the alternative with the smallest maximum regret
     max_index = max_regrets.index(min(max_regrets))
+    # Return the alternative index with 1 added (for 1-based indexing)
     return max_index + 1
 
-
+# Main function
 def main():
+    # Get user input table
     user_table = get_user_input()
 
+    # Print results for each decision criterion
     print(f"{Fore.GREEN}Maximax choice: {Fore.RED}Alternative {maximax(user_table)}{Style.RESET_ALL}")
     print(f"{Fore.GREEN}Maximin choice: {Fore.RED}Alternative {maximin(user_table)}{Style.RESET_ALL}")
+    # Prompt the user to enter the coefficient of optimism for the Hurwicz criterion
     alpha = float(input(f"{Fore.YELLOW}Enter the coefficient of optimism (alpha) for the Hurwicz criterion: {Style.RESET_ALL}"))
+    # Print result for the Hurwicz criterion with the specified coefficient of optimism
     print(f"{Fore.GREEN}Hurwicz choice (alpha={alpha}): Alternative {hurwicz(user_table, alpha)}{Style.RESET_ALL}")
     print(f"{Fore.GREEN}Equally likely choice: {Fore.RED}Alternative {equally_likely(user_table)}{Style.RESET_ALL}")
     print(f"{Fore.GREEN}Minimax regret choice: {Fore.RED}Alternative {minimax_regret(user_table)}{Style.RESET_ALL}")
 
-
+# Entry point of the program
 if __name__ == "__main__":
     main()
