@@ -39,6 +39,13 @@ def equally_likely(alternatives):
     max_index = avg_values.index(max(avg_values))
     return max_index + 1
 
+def minimax_regret(alternatives):
+    max_values = [max(alt[1:]) for alt in alternatives]
+    regret_table = [[max_value - value for value in alt[1:]] for alt, max_value in zip(alternatives, max_values)]
+    max_regrets = [max(regret) for regret in regret_table]
+    max_index = max_regrets.index(min(max_regrets))
+    return max_index + 1
+
 def main():
     user_table = get_user_input()
 
@@ -47,6 +54,7 @@ def main():
     alpha = float(input("Enter the coefficient of optimism (alpha) for the Hurwicz criterion: "))
     print(f"Hurwicz choice (alpha={alpha}): Alternative {hurwicz(user_table, alpha)}")
     print(f"Equally likely choice: Alternative {equally_likely(user_table)}")
+    print(f"Minimax regret choice: Alternative {minimax_regret(user_table)}")
 
 if __name__ == "__main__":
     main()
