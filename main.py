@@ -1,15 +1,17 @@
+from colorama import Fore, Style
+
 # This function prompts the user to enter the number of alternatives and market states,
 # and then collects user input for each alternative and market state.
 # It returns a table containing the user input.
 def get_user_input():
-    num_alternatives = int(input("Enter the number of alternatives: "))
-    num_states = int(input("Enter the number of market states: "))
+    num_alternatives = int(input(f"{Fore.YELLOW}Enter the number of alternatives: {Style.RESET_ALL}"))
+    num_states = int(input(f"{Fore.YELLOW}Enter the number of market states: {Style.RESET_ALL}"))
 
     table = []
     for i in range(num_alternatives):
-        alternative = [input(f"Enter the name of Alternative {i + 1}: ")]
+        alternative = [input(f"{Fore.CYAN}Enter the name of Alternative {i + 1}: {Style.RESET_ALL}")]
         for j in range(num_states):
-            value = input(f"Enter the expected value for Alternative {i + 1} in State {j + 1}: ")
+            value = input(f"{Fore.CYAN}Enter the expected value for Alternative {i + 1} in State {j + 1}: {Style.RESET_ALL}")
             value = parse_value(value)
             alternative.append(value)
         table.append(alternative)
@@ -78,12 +80,12 @@ def minimax_regret(alternatives):
 def main():
     user_table = get_user_input()
 
-    print(f"Maximax choice: Alternative {maximax(user_table)}")
-    print(f"Maximin choice: Alternative {maximin(user_table)}")
-    alpha = float(input("Enter the coefficient of optimism (alpha) for the Hurwicz criterion: "))
-    print(f"Hurwicz choice (alpha={alpha}): Alternative {hurwicz(user_table, alpha)}")
-    print(f"Equally likely choice: Alternative {equally_likely(user_table)}")
-    print(f"Minimax regret choice: Alternative {minimax_regret(user_table)}")
+    print(f"{Fore.GREEN}Maximax choice: {Fore.RED}Alternative {maximax(user_table)}{Style.RESET_ALL}")
+    print(f"{Fore.GREEN}Maximin choice: {Fore.RED}Alternative {maximin(user_table)}{Style.RESET_ALL}")
+    alpha = float(input(f"{Fore.YELLOW}Enter the coefficient of optimism (alpha) for the Hurwicz criterion: {Style.RESET_ALL}"))
+    print(f"{Fore.GREEN}Hurwicz choice (alpha={alpha}): Alternative {hurwicz(user_table, alpha)}{Style.RESET_ALL}")
+    print(f"{Fore.GREEN}Equally likely choice: {Fore.RED}Alternative {equally_likely(user_table)}{Style.RESET_ALL}")
+    print(f"{Fore.GREEN}Minimax regret choice: {Fore.RED}Alternative {minimax_regret(user_table)}{Style.RESET_ALL}")
 
 
 if __name__ == "__main__":
