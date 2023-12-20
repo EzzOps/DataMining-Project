@@ -46,6 +46,9 @@ def maximax(alternatives):
     max_values = [max(alt[1:]) for alt in alternatives]
     # Find the index of the alternative with the highest maximum payoff
     max_index = max_values.index(max(max_values))
+    # Print the reasoning behind the decision
+    print(f"{'#' * 5} {Fore.YELLOW}Maximax criterion: Selecting the alternative with the highest maximum payoff. {'#' * 5}")
+    print(f"{'#' * 5} {Fore.CYAN}Reasoning: Maximax criterion assumes the best-case scenario by selecting the alternative with the highest potential payoff. {'#' * 5}")
     # Return the alternative index with 1 added (for 1-based indexing)
     return max_index + 1
 
@@ -55,6 +58,9 @@ def maximin(alternatives):
     min_values = [min(alt[1:]) for alt in alternatives]
     # Find the index of the alternative with the highest minimum payoff
     max_index = min_values.index(max(min_values))
+    # Print the reasoning behind the decision
+    print(f"{'#' * 5} {Fore.YELLOW}Maximin criterion: Selecting the alternative with the highest minimum payoff. {'#' * 5}")
+    print(f"{'#' * 5} {Fore.CYAN}Reasoning: Maximin criterion assumes the worst-case scenario by selecting the alternative with the highest guaranteed minimum payoff. {'#' * 5}")
     # Return the alternative index with 1 added (for 1-based indexing)
     return max_index + 1
 
@@ -64,6 +70,9 @@ def hurwicz(alternatives, alpha):
     weighted_values = [(alpha * max(alt[1:]) + (1 - alpha) * min(alt[1:])) for alt in alternatives]
     # Find the index of the alternative with the highest weighted average payoff
     max_index = weighted_values.index(max(weighted_values))
+    # Print the reasoning behind the decision
+    print(f"{'#' * 5} {Fore.YELLOW}Hurwicz criterion (alpha={alpha}): Selecting the alternative with the highest weighted average payoff. {'#' * 5}")
+    print(f"{'#' * 5} {Fore.CYAN}Reasoning: Hurwicz criterion balances between optimism and pessimism by considering a weighted average of maximum and minimum payoffs. {'#' * 5}")
     # Return the alternative index with 1 added (for 1-based indexing)
     return max_index + 1
 
@@ -73,6 +82,9 @@ def equally_likely(alternatives):
     avg_values = [sum(alt[1:]) / len(alt[1:]) for alt in alternatives]
     # Find the index of the alternative with the highest average payoff
     max_index = avg_values.index(max(avg_values))
+    # Print the reasoning behind the decision
+    print(f"{'#' * 5} {Fore.YELLOW}Equally Likely criterion: Selecting the alternative with the highest average payoff. {'#' * 5}")
+    print(f"{'#' * 5} {Fore.CYAN}Reasoning: Equally Likely criterion assumes equal probabilities for each market state and selects the alternative with the highest average payoff. {'#' * 5}")
     # Return the alternative index with 1 added (for 1-based indexing)
     return max_index + 1
 
@@ -86,6 +98,9 @@ def minimax_regret(alternatives):
     max_regrets = [max(regret) for regret in regret_table]
     # Find the index of the alternative with the smallest maximum regret
     max_index = max_regrets.index(min(max_regrets))
+    # Print the reasoning behind the decision
+    print(f"{'#' * 5} {Fore.YELLOW}Minimax Regret criterion: Selecting the alternative with the smallest maximum regret. {'#' * 5}")
+    print(f"{'#' * 5} {Fore.CYAN}Reasoning: Minimax Regret criterion minimizes the maximum regret by considering the difference between each alternative's payoff and the maximum payoff in each market state. {'#' * 5}")
     # Return the alternative index with 1 added (for 1-based indexing)
     return max_index + 1
 
@@ -95,14 +110,14 @@ def main():
     user_table = get_user_input()
 
     # Print results for each decision criterion
-    print(f"{Fore.GREEN}Maximax choice: {Fore.RED}Alternative {maximax(user_table)}{Style.RESET_ALL}")
-    print(f"{Fore.GREEN}Maximin choice: {Fore.RED}Alternative {maximin(user_table)}{Style.RESET_ALL}")
+    print(f"{'#' * 5} {Fore.GREEN}Maximax choice: {Fore.RED}Alternative {maximax(user_table)}{Style.RESET_ALL} {'#' * 5}")
+    print(f"{'#' * 5} {Fore.GREEN}Maximin choice: {Fore.RED}Alternative {maximin(user_table)}{Style.RESET_ALL} {'#' * 5}")
     # Prompt the user to enter the coefficient of optimism for the Hurwicz criterion
     alpha = float(input(f"{Fore.YELLOW}Enter the coefficient of optimism (alpha) for the Hurwicz criterion: {Style.RESET_ALL}"))
     # Print result for the Hurwicz criterion with the specified coefficient of optimism
-    print(f"{Fore.GREEN}Hurwicz choice (alpha={alpha}): Alternative {hurwicz(user_table, alpha)}{Style.RESET_ALL}")
-    print(f"{Fore.GREEN}Equally likely choice: {Fore.RED}Alternative {equally_likely(user_table)}{Style.RESET_ALL}")
-    print(f"{Fore.GREEN}Minimax regret choice: {Fore.RED}Alternative {minimax_regret(user_table)}{Style.RESET_ALL}")
+    print(f"{'#' * 5} {Fore.GREEN}Hurwicz choice (alpha={alpha}): Alternative {hurwicz(user_table, alpha)}{Style.RESET_ALL} {'#' * 5}")
+    print(f"{'#' * 5} {Fore.GREEN}Equally likely choice: {Fore.RED}Alternative {equally_likely(user_table)}{Style.RESET_ALL} {'#' * 5}")
+    print(f"{'#' * 5} {Fore.GREEN}Minimax regret choice: {Fore.RED}Alternative {minimax_regret(user_table)}{Style.RESET_ALL} {'#' * 5}")
 
 # Entry point of the program
 if __name__ == "__main__":
