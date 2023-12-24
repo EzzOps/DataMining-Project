@@ -21,8 +21,8 @@ RUN mkdir -p /output/conf
 WORKDIR /output/conf
 RUN cp /redis-${REDIS_VERSION}/redis.conf .
 
-# Stage 2: Create minimal image
-FROM scratch
+# Stage 2: Use a minimal base image with shell
+FROM debian:buster-slim
 
 # Copy binaries and configuration from the builder stage
 COPY --from=builder /output/conf/redis.conf /etc/redis/redis.conf
