@@ -1,0 +1,301 @@
+Customer Index,Age Group,Visit Status,Visit Frequency,Other Reliance Stores
+1,26  To  35 years, Already Visited,Once a Month,Yes
+2,26  To  35 years,First visit,Not Visited Before,Yes
+3,16  To  25 years, Already Visited,Once a Month,Yes
+4,26  To  35 years,First visit,Not Visited Before,No
+5,16  To  25 years,First visit,Not Visited Before,No
+6,26  To  35 years, Already Visited,Once every 6 months,No
+7,26  To  35 years, Already Visited,Once every 3 months,No
+8,16  To  25 years, Already Visited,Once a Month,No
+9,46  To  60 years, Already Visited,Every 2-3 days,Yes
+10,16  To  25 years, Already Visited,Once in 1-2 weeks,Yes
+11,26  To  35 years, Already Visited,Once a Month,Yes
+12,36  To  45 years, Already Visited,Once in 1-2 weeks,Yes
+13,26  To  35 years, Already Visited,Once a Month,Yes
+14,26  To  35 years,First visit,Not Visited Before,No
+15,16  To  25 years,First visit,Not Visited Before,Yes
+16,36  To  45 years, Already Visited,Once every 1-2 month,Yes
+17,36  To  45 years, Already Visited,Once in 1-2 weeks,Yes
+18,26  To  35 years, Already Visited,Once a Month,Yes
+19,26  To  35 years, Already Visited,Once a Month,Yes
+20,36  To  45 years, Already Visited,Once a week,No
+21,16  To  25 years,First visit,Not Visited Before,No
+22,16  To  25 years,First visit,Not Visited Before,Yes
+23,26  To  35 years, Already Visited,Once every 1-2 month,Yes
+24,16  To  25 years,First visit,Not Visited Before,No
+25,16  To  25 years,First visit,Not Visited Before,Yes
+26,16  To  25 years, Already Visited,Once every 1-2 month,No
+27,16  To  25 years, Already Visited,Once in 1-2 weeks,Yes
+28,26  To  35 years, Already Visited,Once in 1-2 weeks,Yes
+29,26  To  35 years,First visit,Not Visited Before,Yes
+30,16  To  25 years, Already Visited,Once a Month,No
+31,16  To  25 years, Already Visited,Once a Month,Yes
+32,16  To  25 years,First visit,Not Visited Before,No
+33,26  To  35 years, Already Visited,Once every 1-2 month,Yes
+34,16  To  25 years, Already Visited,Once in 1-2 weeks,Yes
+35,26  To  35 years,First visit,Not Visited Before,No
+36,16  To  25 years,First visit,Not Visited Before,No
+37,16  To  25 years, Already Visited,Once in 1-2 weeks,Yes
+38,16  To  25 years,First visit,Not Visited Before,Yes
+39,26  To  35 years, Already Visited,Once a Month,Yes
+40,26  To  35 years, Already Visited,Once a Month,Yes
+41,16  To  25 years,First visit,Not Visited Before,Yes
+42,36  To  45 years, Already Visited,Daily,Yes
+43,16  To  25 years,First visit,Not Visited Before,Yes
+44,16  To  25 years,First visit,Not Visited Before,Yes
+45,36  To  45 years, Already Visited,Once a Month,Yes
+46,36  To  45 years, Already Visited,Once a week,Yes
+47,16  To  25 years, Already Visited,Once every 3 months,Yes
+48,16  To  25 years, Already Visited,Once every 1-2 month,Yes
+49,16  To  25 years,First visit,Not Visited Before,No
+50,36  To  45 years, Already Visited,Once a Month,Yes
+51,26  To  35 years,First visit,Not Visited Before,Yes
+52,26  To  35 years,First visit,Not Visited Before,Yes
+53,16  To  25 years,First visit,Not Visited Before,No
+54,16  To  25 years, Already Visited,Once every 3 months,Yes
+55,16  To  25 years,First visit,Not Visited Before,No
+56,26  To  35 years, Already Visited,Once in 1-2 weeks,Yes
+57,26  To  35 years, Already Visited,Once every 6 months,Yes
+58,26  To  35 years, Already Visited,Once a Month,Yes
+59,26  To  35 years, Already Visited,Once every 3 months,Yes
+60,16  To  25 years, Already Visited,Once a Month,Yes
+61,26  To  35 years, Already Visited,Once every 1-2 month,Yes
+62,26  To  35 years, Already Visited,Once a year or less often,Yes
+63,26  To  35 years, Already Visited,Once every 1-2 month,Yes
+64,26  To  35 years,First visit,Not Visited Before,Yes
+65,36  To  45 years,First visit,Not Visited Before,Yes
+66,36  To  45 years, Already Visited,Once every 3 months,Yes
+67,16  To  25 years, Already Visited,Once every 3 months,Yes
+68,16  To  25 years,First visit,Not Visited Before,Yes
+69,16  To  25 years,First visit,Not Visited Before,Yes
+70,16  To  25 years, Already Visited,Once a year or less often,No
+71,16  To  25 years, Already Visited,Once every 6 months,Yes
+72,16  To  25 years,First visit,Not Visited Before,No
+73,26  To  35 years, Already Visited,Once a Month,Yes
+74,16  To  25 years,First visit,Not Visited Before,No
+75,16  To  25 years,First visit,Not Visited Before,Yes
+76,16  To  25 years,First visit,Not Visited Before,Yes
+77,26  To  35 years, Already Visited,Once a Month,Yes
+78,26  To  35 years,First visit,Not Visited Before,Yes
+79,16  To  25 years,First visit,Not Visited Before,No
+80,16  To  25 years,First visit,Not Visited Before,No
+81,16  To  25 years,First visit,Not Visited Before,No
+82,16  To  25 years, Already Visited,Once every 3 months,Yes
+83,16  To  25 years,First visit,Not Visited Before,Yes
+84,26  To  35 years,First visit,Not Visited Before,Yes
+85,16  To  25 years, Already Visited,Once every 1-2 month,Yes
+86,16  To  25 years, Already Visited,Once a Month,Yes
+87,16  To  25 years, Already Visited,Once a Month,Yes
+88,16  To  25 years,First visit,Not Visited Before,Yes
+89,46  To  60 years, Already Visited,Once in 1-2 weeks,Yes
+90,16  To  25 years,First visit,Not Visited Before,Yes
+91,16  To  25 years,First visit,Not Visited Before,No
+92,16  To  25 years, Already Visited,Once a year or less often,Yes
+93,16  To  25 years, Already Visited,Once every 3 months,Yes
+94,26  To  35 years,First visit,Not Visited Before,Yes
+95,16  To  25 years, Already Visited,Once in 1-2 weeks,No
+96,16  To  25 years, Already Visited,Once every 3 months,Yes
+97,26  To  35 years,First visit,Not Visited Before,Yes
+98,16  To  25 years,First visit,Not Visited Before,Yes
+99,26  To  35 years,First visit,Not Visited Before,Yes
+100,26  To  35 years,First visit,Not Visited Before,Yes
+101,36  To  45 years, Already Visited,Once every 2 weeks,Yes
+102,46  To  60 years, Already Visited,Once a week,Yes
+103,26  To  35 years, Already Visited,Once every 1-2 months,Yes
+104,16  To  25 years,First visit,Not Visited Before,No
+105,36  To  45 years, Already Visited,Once every 3 months,Yes
+106,26  To  35 years, Already Visited,Once every 6 months,Yes
+107,16  To  25 years,First visit,Not Visited Before,Yes
+108,26  To  35 years, Already Visited,Once a Month,Yes
+109,36  To  45 years, Already Visited,Once every 2 weeks,No
+110,26  To  35 years,First visit,Not Visited Before,Yes
+111,46  To  60 years, Already Visited,Once every 3 months,Yes
+112,16  To  25 years, Already Visited,Once a Month,No
+113,36  To  45 years, Already Visited,Once a week,Yes
+114,26  To  35 years, Already Visited,Once in 1-2 weeks,Yes
+115,16  To  25 years,First visit,Not Visited Before,No
+116,26  To  35 years, Already Visited,Once every 6 months,Yes
+117,36  To  45 years, Already Visited,Once every 3 months,No
+118,26  To  35 years, Already Visited,Once a Month,Yes
+119,26  To  35 years, Already Visited,Once a Month,Yes
+120,36  To  45 years, Already Visited,Once a week,No
+121,16  To  25 years,First visit,Not Visited Before,No
+122,16  To  25 years, Already Visited,Once in 1-2 weeks,Yes
+123,26  To  35 years, Already Visited,Once every 1-2 months,Yes
+124,16  To  25 years,First visit,Not Visited Before,No
+125,16  To  25 years,First visit,Not Visited Before,Yes
+126,16  To  25 years, Already Visited,Once every 1-2 months,No
+127,16  To  25 years, Already Visited,Once in 1-2 weeks,Yes
+128,26  To  35 years, Already Visited,Once in 1-2 weeks,Yes
+129,26  To  35 years,First visit,Not Visited Before,Yes
+130,16  To  25 years, Already Visited,Once a Month,No
+131,16  To  25 years, Already Visited,Once a Month,Yes
+132,16  To  25 years,First visit,Not Visited Before,No
+133,26  To  35 years, Already Visited,Once every 1-2 months,Yes
+134,16  To  25 years, Already Visited,Once in 1-2 weeks,Yes
+135,26  To  35 years,First visit,Not Visited Before,No
+136,16  To  25 years,First visit,Not Visited Before,No
+137,16  To  25 years, Already Visited,Once in 1-2 weeks,Yes
+138,16  To  25 years,First visit,Not Visited Before,Yes
+139,26  To  35 years, Already Visited,Once a Month,Yes
+140,26  To  35 years, Already Visited,Once a Month,Yes
+141,16  To  25 years,First visit,Not Visited Before,Yes
+142,36  To  45 years, Already Visited,Daily,Yes
+143,16  To  25 years,First visit,Not Visited Before,Yes
+144,16  To  25 years,First visit,Not Visited Before,Yes
+145,36  To  45 years, Already Visited,Once a Month,Yes
+146,36  To  45 years, Already Visited,Once a week,Yes
+147,16  To  25 years, Already Visited,Once every 3 months,Yes
+148,16  To  25 years, Already Visited,Once every 1-2 months,Yes
+149,16  To  25 years,First visit,Not Visited Before,No
+150,36  To  45 years, Already Visited,Once a Month,Yes
+151,26  To  35 years,First visit,Not Visited Before,Yes
+152,26  To  35 years,First visit,Not Visited Before,Yes
+153,16  To  25 years,First visit,Not Visited Before,No
+154,16  To  25 years, Already Visited,Once every 3 months,Yes
+155,16  To  25 years,First visit,Not Visited Before,No
+156,26  To  35 years, Already Visited,Once in 1-2 weeks,Yes
+157,26  To  35 years, Already Visited,Once every 6 months,Yes
+158,26  To  35 years, Already Visited,Once a Month,Yes
+159,26  To  35 years, Already Visited,Once every 3 months,Yes
+160,16  To  25 years, Already Visited,Once a Month,Yes
+161,26  To  35 years, Already Visited,Once every 1-2 months,Yes
+162,26  To  35 years, Already Visited,Once a year or less often,Yes
+163,26  To  35 years, Already Visited,Once every 1-2 months,Yes
+164,26  To  35 years,First visit,Not Visited Before,Yes
+165,36  To  45 years,First visit,Not Visited Before,Yes
+166,36  To  45 years, Already Visited,Once every 3 months,Yes
+167,16  To  25 years, Already Visited,Once every 3 months,Yes
+168,16  To  25 years,First visit,Not Visited Before,Yes
+169,16  To  25 years,First visit,Not Visited Before,Yes
+170,16  To  25 years, Already Visited,Once a year or less often,No
+171,16  To  25 years, Already Visited,Once every 6 months,Yes
+172,16  To  25 years,First visit,Not Visited Before,No
+173,26  To  35 years, Already Visited,Once a Month,Yes
+174,16  To  25 years,First visit,Not Visited Before,No
+175,16  To  25 years,First visit,Not Visited Before,Yes
+176,16  To  25 years,First visit,Not Visited Before,Yes
+177,26  To  35 years, Already Visited,Once a Month,Yes
+178,26  To  35 years,First visit,Not Visited Before,Yes
+179,16  To  25 years,First visit,Not Visited Before,No
+180,16  To  25 years,First visit,Not Visited Before,No
+181,16  To  25 years,First visit,Not Visited Before,No
+182,16  To  25 years, Already Visited,Once every 3 months,Yes
+183,16  To  25 years,First visit,Not Visited Before,Yes
+184,26  To  35 years,First visit,Not Visited Before,Yes
+185,16  To  25 years, Already Visited,Once every 1-2 months,Yes
+186,16  To  25 years, Already Visited,Once a Month,Yes
+187,16  To  25 years, Already Visited,Once a Month,Yes
+188,16  To  25 years,First visit,Not Visited Before,Yes
+189,46  To  60 years, Already Visited,Once in 1-2 weeks,Yes
+190,16  To  25 years,First visit,Not Visited Before,Yes
+191,16  To  25 years,First visit,Not Visited Before,No
+192,16  To  25 years, Already Visited,Once a year or less often,Yes
+193,16  To  25 years, Already Visited,Once every 3 months,Yes
+194,26  To  35 years,First visit,Not Visited Before,Yes
+195,16  To  25 years, Already Visited,Once in 1-2 weeks,No
+196,16  To  25 years, Already Visited,Once every 3 months,Yes
+197,26  To  35 years,First visit,Not Visited Before,Yes
+198,16  To  25 years,First visit,Not Visited Before,Yes
+199,26  To  35 years,First visit,Not Visited Before,Yes
+200,36  To  45 years, Already Visited,Once every 2 weeks,Yes
+201,36  To  45 years, Already Visited,Once a month,Yes
+202,46  To  60 years, Already Visited,Every 2-3 days,Yes
+203,26  To  35 years, Already Visited,Once every 1-2 weeks,Yes
+204,16  To  25 years,First visit,Not Visited Before,No
+205,36  To  45 years, Already Visited,Once every 3 months,Yes
+206,26  To  35 years, Already Visited,Once every 6 months,Yes
+207,16  To  25 years,First visit,Not Visited Before,Yes
+208,26  To  35 years, Already Visited,Once a Month,Yes
+209,36  To  45 years, Already Visited,Once every 2 weeks,No
+210,26  To  35 years,First visit,Not Visited Before,Yes
+211,46  To  60 years, Already Visited,Once every 3 months,Yes
+212,16  To  25 years, Already Visited,Once a Month,No
+213,36  To  45 years, Already Visited,Once a week,Yes
+214,26  To  35 years, Already Visited,Once in 1-2 weeks,Yes
+215,16  To  25 years,First visit,Not Visited Before,No
+216,26  To  35 years, Already Visited,Once every 6 months,Yes
+217,36  To  45 years, Already Visited,Once every 3 months,No
+218,26  To  35 years, Already Visited,Once a Month,Yes
+219,26  To  35 years, Already Visited,Once a Month,Yes
+220,36  To  45 years, Already Visited,Once a week,No
+221,16  To  25 years,First visit,Not Visited Before,No
+222,16  To  25 years, Already Visited,Once in 1-2 weeks,Yes
+223,26  To  35 years, Already Visited,Once every 1-2 months,Yes
+224,16  To  25 years,First visit,Not Visited Before,No
+225,16  To  25 years,First visit,Not Visited Before,Yes
+226,16  To  25 years, Already Visited,Once every 1-2 months,No
+227,16  To  25 years, Already Visited,Once in 1-2 weeks,Yes
+228,26  To  35 years, Already Visited,Once in 1-2 weeks,Yes
+229,26  To  35 years,First visit,Not Visited Before,Yes
+230,16  To  25 years, Already Visited,Once a Month,No
+231,16  To  25 years, Already Visited,Once a Month,Yes
+232,16  To  25 years,First visit,Not Visited Before,No
+233,26  To  35 years, Already Visited,Once every 1-2 months,Yes
+234,16  To  25 years, Already Visited,Once in 1-2 weeks,Yes
+235,26  To  35 years,First visit,Not Visited Before,No
+236,16  To  25 years,First visit,Not Visited Before,No
+237,16  To  25 years, Already Visited,Once in 1-2 weeks,Yes
+238,16  To  25 years,First visit,Not Visited Before,Yes
+239,26  To  35 years, Already Visited,Once a Month,Yes
+240,26  To  35 years, Already Visited,Once a Month,Yes
+241,16  To  25 years,First visit,Not Visited Before,Yes
+242,36  To  45 years, Already Visited,Daily,Yes
+243,16  To  25 years,First visit,Not Visited Before,Yes
+244,16  To  25 years,First visit,Not Visited Before,Yes
+245,36  To  45 years, Already Visited,Once a Month,Yes
+246,36  To  45 years, Already Visited,Once a week,Yes
+247,16  To  25 years, Already Visited,Once every 3 months,Yes
+248,16  To  25 years, Already Visited,Once every 1-2 months,Yes
+249,16  To  25 years,First visit,Not Visited Before,No
+250,36  To  45 years, Already Visited,Once a Month,Yes
+251,26  To  35 years,First visit,Not Visited Before,Yes
+252,26  To  35 years,First visit,Not Visited Before,Yes
+253,16  To  25 years,First visit,Not Visited Before,No
+254,16  To  25 years, Already Visited,Once every 3 months,Yes
+255,16  To  25 years,First visit,Not Visited Before,No
+256,26  To  35 years, Already Visited,Once in 1-2 weeks,Yes
+257,26  To  35 years, Already Visited,Once every 6 months,Yes
+258,26  To  35 years, Already Visited,Once a Month,Yes
+259,26  To  35 years, Already Visited,Once every 3 months,Yes
+260,16  To  25 years, Already Visited,Once a Month,Yes
+261,26  To  35 years, Already Visited,Once every 1-2 months,Yes
+262,26  To  35 years, Already Visited,Once a year or less often,Yes
+263,26  To  35 years, Already Visited,Once every 1-2 months,Yes
+264,26  To  35 years,First visit,Not Visited Before,Yes
+265,36  To  45 years,First visit,Not Visited Before,Yes
+266,36  To  45 years, Already Visited,Once every 3 months,Yes
+267,16  To  25 years, Already Visited,Once every 3 months,Yes
+268,16  To  25 years,First visit,Not Visited Before,Yes
+269,16  To  25 years,First visit,Not Visited Before,Yes
+270,16  To  25 years, Already Visited,Once a year or less often,No
+271,16  To  25 years, Already Visited,Once every 6 months,Yes
+272,16  To  25 years,First visit,Not Visited Before,No
+273,26  To  35 years, Already Visited,Once a Month,Yes
+274,16  To  25 years,First visit,Not Visited Before,No
+275,16  To  25 years,First visit,Not Visited Before,Yes
+276,16  To  25 years,First visit,Not Visited Before,Yes
+277,26  To  35 years, Already Visited,Once a Month,Yes
+278,26  To  35 years,First visit,Not Visited Before,Yes
+279,16  To  25 years,First visit,Not Visited Before,No
+280,16  To  25 years,First visit,Not Visited Before,No
+281,16  To  25 years,First visit,Not Visited Before,No
+282,16  To  25 years, Already Visited,Once every 3 months,Yes
+283,16  To  25 years,First visit,Not Visited Before,Yes
+284,26  To  35 years,First visit,Not Visited Before,Yes
+285,16  To  25 years, Already Visited,Once every 1-2 months,Yes
+286,16  To  25 years, Already Visited,Once a Month,Yes
+287,16  To  25 years, Already Visited,Once a Month,Yes
+288,16  To  25 years,First visit,Not Visited Before,Yes
+289,46  To  60 years, Already Visited,Once in 1-2 weeks,Yes
+290,16  To  25 years,First visit,Not Visited Before,Yes
+291,16  To  25 years,First visit,Not Visited Before,No
+292,16  To  25 years, Already Visited,Once a year or less often,Yes
+293,16  To  25 years, Already Visited,Once every 3 months,Yes
+294,26  To  35 years,First visit,Not Visited Before,Yes
+295,16  To  25 years, Already Visited,Once in 1-2 weeks,No
+296,16  To  25 years, Already Visited,Once every 3 months,Yes
+297,26  To  35 years,First visit,Not Visited Before,Yes
+298,16  To  25 years,First visit,Not Visited Before,Yes
+299,26  To  35 years,First visit,Not Visited Before,Yes
+300,36  To  45 years, Already Visited,Once every 2 weeks,Yes
