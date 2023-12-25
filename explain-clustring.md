@@ -1,4 +1,4 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/EzzOps/codespaces-blank/blob/main/main-textmining.ipynb]
+[Click here to open in Colab](https://colab.research.google.com/github/EzzOps/codespaces-blank/blob/main/main-clustering.ipynb)
 
 
 1. **Import necessary libraries**: This is like gathering the tools you need. These tools include ways to organize data (pandas), create plots (matplotlib), group similar items together (KMeans from sklearn.cluster), standardize data (StandardScaler from sklearn.preprocessing), and reduce the dimensionality of data (PCA from sklearn.decomposition).
