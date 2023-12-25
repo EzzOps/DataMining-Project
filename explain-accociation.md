@@ -1,5 +1,4 @@
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/EzzOps/codespaces-blank/blob/main/main-associations.ipynb]
-
+[Click here to open in Colab](https://colab.research.google.com/github/EzzOps/codespaces-blank/blob/main/main-associations.ipynb)
 # Data Preprocessing Steps
 
 Let's visualize each step with a hypothetical dataset:
