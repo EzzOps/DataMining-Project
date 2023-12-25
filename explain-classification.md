@@ -1,3 +1,5 @@
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/EzzOps/codespaces-blank/blob/main/main-classification.ipynb]
+
 1. **Import necessary libraries**: This is like gathering the tools you need to work. These tools include ways to organize data (pandas), split data (train_test_split), convert text to numbers (TfidfVectorizer), make predictions (LogisticRegression), and measure how well we did (accuracy_score).
     ```python
     import pandas as pd
