@@ -55,4 +55,29 @@
     plt.show()
     ```
 
-7. **Discuss the obtained results**: This is where you would talk about the clusters and how well they separate the data based on the features. This step doesn't involve any code, but it's an important part of the data analysis process.
+The dataset was clustered into six groups using the K-Means algorithm, and the clusters were visualized using Principal Component Analysis (PCA). Now, let's interpret the clusters:
+
+**Cluster 0: Diverse Spending Habits**
+- People with average to high credit limits.
+- Make a variety of purchases, including one-off and installment purchases.
+- Generally active users with a mix of spending behaviors.
+
+**Cluster 1: Cash Advance Users**
+- More people with due payments who take cash advances more often.
+- Potentially indicate a group of users who rely on cash advances and might have pending payments.
+
+**Cluster 2: Installment Buyers**
+- Less money spenders with average to high credit limits.
+- Prefer making purchases in installments rather than lump sum payments.
+
+**Cluster 3: High-Credit Cash Advances**
+- People with high credit limits who frequently take cash advances.
+- This group might have a higher financial capacity to access cash in advance.
+
+**Cluster 4: High Spenders**
+- High spenders with high credit limits.
+- Make expensive purchases, indicating a potentially affluent customer segment.
+
+**Cluster 5: Low-Spending Customers**
+- People who don't spend much money but have average to high credit limits.
+- This group consists of users with conservative spending habits.
